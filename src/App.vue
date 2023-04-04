@@ -1,13 +1,21 @@
-<script >
-export default {
-  name: "App"
-}
+<script>
+  import NavBar from './components/NavBar.vue';
+  import IntroSection from './components/IntroSection.vue';
+  import USP from './components/USP.vue';
+  export default {
+    name: "App",
+    components: {
+      NavBar,
+      IntroSection,
+      USP,
+    }
+  }
 </script>
 
 <template>
-  <h1>Hola</h1>
+  <NavBar/>
+  <IntroSection/>
+  <USP/>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped src="./assets/main.css"></style>
